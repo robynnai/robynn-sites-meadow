@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element -- Robynn preview proxies public assets directly. */
 
 import type { PageSection } from '@/lib/content';
 
@@ -16,7 +16,7 @@ export function Gallery({ section }: { section: GallerySection }) {
             key={image.src}
             data-robynn-target={`home__gallery_image_${index}`}
           >
-            <Image
+            <img
               src={image.src}
               alt={image.alt}
               width={image.width}
