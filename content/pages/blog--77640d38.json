@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "routePath": "/blog/",
+  "title": "Blog",
+  "description": "Imported blog landing page placeholder for the Robynn template contract.",
+  "sections": [
+    {
+      "id": "blog-import",
+      "type": "legacy-html",
+      "label": "Blog content",
+      "html": "<section class=\"welcome\" id=\"blog\"><h2>Blog</h2><p>Imported Meadowview blog posts can be added here as legacy HTML or migrated into structured page JSON.</p></section>"
+    }
+  ]
+}
