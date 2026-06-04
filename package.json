@@ -1,0 +1,26 @@
+{
+  "name": "meadowapartment-nextjs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "validate": "node scripts/validate-robynn-template.cjs",
+    "create-page": "node scripts/create-page.cjs",
+    "robynn:bundle": "npm run validate && node scripts/bundle-robynn-site.cjs"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "typescript": "6.0.3"
+  }
+}
