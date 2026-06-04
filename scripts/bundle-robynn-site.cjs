@@ -142,6 +142,342 @@ function pageTargets(page) {
     if (section.type === 'legacy-html') {
       sectionTarget('legacy_html', 'section', section.label, section.html, ['html']);
     }
+
+    if (section.type === 'imported-page') {
+      sectionTarget('title', 'text', `${section.title} title`, section.title, [
+        'title',
+      ]);
+
+      if (section.intro) {
+        sectionTarget(
+          'intro_heading',
+          'text',
+          `${section.title} intro heading`,
+          section.intro.heading,
+          ['intro', 'heading'],
+        );
+        section.intro.body.forEach((paragraph, paragraphIndex) => {
+          sectionTarget(
+            `intro_body_${paragraphIndex}`,
+            'text',
+            `${section.title} intro paragraph ${paragraphIndex + 1}`,
+            paragraph,
+            ['intro', 'body', String(paragraphIndex)],
+          );
+        });
+        section.intro.highlights?.forEach((highlight, highlightIndex) => {
+          sectionTarget(
+            `intro_highlight_${highlightIndex}`,
+            'text',
+            `${section.title} highlight ${highlightIndex + 1}`,
+            highlight,
+            ['intro', 'highlights', String(highlightIndex)],
+          );
+        });
+        if (section.intro.image) {
+          sectionTarget(
+            'intro_image',
+            'image',
+            `${section.title} intro image`,
+            section.intro.image.src,
+            ['intro', 'image', 'src'],
+          );
+        }
+      }
+
+      if (section.cards) {
+        sectionTarget(
+          'cards_heading',
+          'text',
+          `${section.title} cards heading`,
+          section.cards.heading,
+          ['cards', 'heading'],
+        );
+        if (section.cards.body) {
+          sectionTarget(
+            'cards_body',
+            'text',
+            `${section.title} cards body`,
+            section.cards.body,
+            ['cards', 'body'],
+          );
+        }
+        section.cards.items.forEach((card, cardIndex) => {
+          sectionTarget(
+            `card_${cardIndex}_title`,
+            'text',
+            `${section.title} card ${cardIndex + 1} title`,
+            card.title,
+            ['cards', 'items', String(cardIndex), 'title'],
+          );
+          if (card.body) {
+            sectionTarget(
+              `card_${cardIndex}_body`,
+              'text',
+              `${section.title} card ${cardIndex + 1} body`,
+              card.body,
+              ['cards', 'items', String(cardIndex), 'body'],
+            );
+          }
+          if (card.image) {
+            sectionTarget(
+              `card_${cardIndex}_image`,
+              'image',
+              `${section.title} card ${cardIndex + 1} image`,
+              card.image.src,
+              ['cards', 'items', String(cardIndex), 'image', 'src'],
+            );
+          }
+          if (card.cta) {
+            sectionTarget(
+              `card_${cardIndex}_link`,
+              'link',
+              `${section.title} card ${cardIndex + 1} link`,
+              card.cta.href,
+              ['cards', 'items', String(cardIndex), 'cta', 'href'],
+            );
+          }
+        });
+      }
+
+      if (section.people) {
+        sectionTarget(
+          'people_heading',
+          'text',
+          `${section.title} people heading`,
+          section.people.heading,
+          ['people', 'heading'],
+        );
+        sectionTarget(
+          'people_body',
+          'text',
+          `${section.title} people body`,
+          section.people.body,
+          ['people', 'body'],
+        );
+        section.people.items.forEach((person, personIndex) => {
+          sectionTarget(
+            `person_${personIndex}_image`,
+            'image',
+            `${section.title} person ${personIndex + 1} image`,
+            person.image.src,
+            ['people', 'items', String(personIndex), 'image', 'src'],
+          );
+          sectionTarget(
+            `person_${personIndex}_name`,
+            'text',
+            `${section.title} person ${personIndex + 1} name`,
+            person.name,
+            ['people', 'items', String(personIndex), 'name'],
+          );
+          sectionTarget(
+            `person_${personIndex}_role`,
+            'text',
+            `${section.title} person ${personIndex + 1} role`,
+            person.role,
+            ['people', 'items', String(personIndex), 'role'],
+          );
+        });
+      }
+
+      if (section.services) {
+        sectionTarget(
+          'services_heading',
+          'text',
+          `${section.title} services heading`,
+          section.services.heading,
+          ['services', 'heading'],
+        );
+        sectionTarget(
+          'services_body',
+          'text',
+          `${section.title} services body`,
+          section.services.body,
+          ['services', 'body'],
+        );
+        section.services.items.forEach((service, serviceIndex) => {
+          sectionTarget(
+            `service_${serviceIndex}_eyebrow`,
+            'text',
+            `${section.title} service ${serviceIndex + 1} number`,
+            service.eyebrow,
+            ['services', 'items', String(serviceIndex), 'eyebrow'],
+          );
+          sectionTarget(
+            `service_${serviceIndex}_title`,
+            'text',
+            `${section.title} service ${serviceIndex + 1} title`,
+            service.title,
+            ['services', 'items', String(serviceIndex), 'title'],
+          );
+          sectionTarget(
+            `service_${serviceIndex}_body`,
+            'text',
+            `${section.title} service ${serviceIndex + 1} body`,
+            service.body,
+            ['services', 'items', String(serviceIndex), 'body'],
+          );
+        });
+      }
+
+      if (section.contact) {
+        sectionTarget(
+          'contact_heading',
+          'text',
+          `${section.title} contact heading`,
+          section.contact.heading,
+          ['contact', 'heading'],
+        );
+        sectionTarget(
+          'contact_body',
+          'text',
+          `${section.title} contact body`,
+          section.contact.body,
+          ['contact', 'body'],
+        );
+        section.contact.details.forEach((detail, detailIndex) => {
+          sectionTarget(
+            `detail_${detailIndex}_label`,
+            'text',
+            `${section.title} detail ${detailIndex + 1} label`,
+            detail.label,
+            ['contact', 'details', String(detailIndex), 'label'],
+          );
+          detail.values.forEach((value, valueIndex) => {
+            sectionTarget(
+              `detail_${detailIndex}_${valueIndex}`,
+              'text',
+              `${section.title} detail ${detailIndex + 1} value ${valueIndex + 1}`,
+              value,
+              [
+                'contact',
+                'details',
+                String(detailIndex),
+                'values',
+                String(valueIndex),
+              ],
+            );
+          });
+        });
+      }
+
+      if (section.projects) {
+        sectionTarget(
+          'projects_heading',
+          'text',
+          `${section.title} projects heading`,
+          section.projects.heading,
+          ['projects', 'heading'],
+        );
+        sectionTarget(
+          'projects_body',
+          'text',
+          `${section.title} projects body`,
+          section.projects.body,
+          ['projects', 'body'],
+        );
+        sectionTarget(
+          'projects_quote',
+          'text',
+          `${section.title} opening quote`,
+          section.projects.openingTestimonial.quote,
+          ['projects', 'openingTestimonial', 'quote'],
+        );
+        sectionTarget(
+          'projects_quote_name',
+          'text',
+          `${section.title} opening quote name`,
+          section.projects.openingTestimonial.name,
+          ['projects', 'openingTestimonial', 'name'],
+        );
+        sectionTarget(
+          'projects_quote_role',
+          'text',
+          `${section.title} opening quote role`,
+          section.projects.openingTestimonial.role,
+          ['projects', 'openingTestimonial', 'role'],
+        );
+        section.projects.items.forEach((project, projectIndex) => {
+          sectionTarget(
+            `project_${projectIndex}_image`,
+            'image',
+            `${section.title} project ${projectIndex + 1} image`,
+            project.image.src,
+            ['projects', 'items', String(projectIndex), 'image', 'src'],
+          );
+          sectionTarget(
+            `project_${projectIndex}_category`,
+            'text',
+            `${section.title} project ${projectIndex + 1} category`,
+            project.category,
+            ['projects', 'items', String(projectIndex), 'category'],
+          );
+          sectionTarget(
+            `project_${projectIndex}_title`,
+            'text',
+            `${section.title} project ${projectIndex + 1} title`,
+            project.title,
+            ['projects', 'items', String(projectIndex), 'title'],
+          );
+          sectionTarget(
+            `project_${projectIndex}_body`,
+            'text',
+            `${section.title} project ${projectIndex + 1} body`,
+            project.body,
+            ['projects', 'items', String(projectIndex), 'body'],
+          );
+          project.items.forEach((item, itemIndex) => {
+            sectionTarget(
+              `project_${projectIndex}_item_${itemIndex}`,
+              'text',
+              `${section.title} project ${projectIndex + 1} item ${itemIndex + 1}`,
+              item,
+              [
+                'projects',
+                'items',
+                String(projectIndex),
+                'items',
+                String(itemIndex),
+              ],
+            );
+          });
+          sectionTarget(
+            `project_${projectIndex}_link`,
+            'link',
+            `${section.title} project ${projectIndex + 1} link`,
+            project.cta.href,
+            ['projects', 'items', String(projectIndex), 'cta', 'href'],
+          );
+          if (project.testimonial) {
+            sectionTarget(
+              `project_${projectIndex}_quote`,
+              'text',
+              `${section.title} project ${projectIndex + 1} quote`,
+              project.testimonial.quote,
+              ['projects', 'items', String(projectIndex), 'testimonial', 'quote'],
+            );
+          }
+        });
+      }
+
+      if (section.cta) {
+        sectionTarget(
+          'cta_heading',
+          'text',
+          `${section.title} CTA heading`,
+          section.cta.heading,
+          ['cta', 'heading'],
+        );
+        sectionTarget('cta_body', 'text', `${section.title} CTA body`, section.cta.body, [
+          'cta',
+          'body',
+        ]);
+        sectionTarget('cta_link', 'link', `${section.title} CTA link`, section.cta.href, [
+          'cta',
+          'href',
+        ]);
+      }
+    }
   });
 
   return targets;

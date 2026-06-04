@@ -105,6 +105,25 @@ function textFromSection(section) {
   if (section.type === 'contact') {
     return [section.heading, section.subheading].filter(Boolean).join(' ');
   }
+  if (section.type === 'imported-page') {
+    const values = [];
+    function collect(value) {
+      if (value == null) return;
+      if (Array.isArray(value)) {
+        value.forEach(collect);
+        return;
+      }
+      if (typeof value === 'object') {
+        Object.entries(value).forEach(([key, child]) => {
+          if (!['src', 'href', 'width', 'height'].includes(key)) collect(child);
+        });
+        return;
+      }
+      if (typeof value === 'string') values.push(value);
+    }
+    collect(section);
+    return values.join(' ');
+  }
   if (section.type === 'legacy-html') {
     return section.html || '';
   }

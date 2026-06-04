@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "routePath": "/contact-us/",
+  "title": "Contact Us",
+  "description": "Contact Meadowview Apartments.",
+  "sections": [
+    {
+      "id": "contact-us",
+      "type": "imported-page",
+      "variant": "contact",
+      "title": "Contact Us",
+      "contact": {
+        "heading": "Get in Touch",
+        "body": "Add a couple of lines that tell users how easily they can get in touch with you. People prefer services where they can contact providers right away.",
+        "formId": "tourRequest",
+        "details": [
+          {
+            "label": "Call Us",
+            "values": ["91 123-456-7890", "91 123-456-7891"]
+          },
+          {
+            "label": "Our Email",
+            "values": ["info@example.com", "info@example.com"]
+          },
+          {
+            "label": "Our Location",
+            "values": ["125, Central Square, New York, NY 286"]
+          },
+          {
+            "label": "Working Hours",
+            "values": ["Mon-Fri: 10AM-5PM", "Sat-Sun: 10AM-1PM"]
+          }
+        ],
+        "socialLinks": [
+          { "label": "Facebook-f", "href": "#" },
+          { "label": "Twitter", "href": "#" },
+          { "label": "Google-plus-g", "href": "#" },
+          { "label": "Linkedin-in", "href": "#" },
+          { "label": "Instagram", "href": "#" }
+        ]
+      }
+    }
+  ]
+}
