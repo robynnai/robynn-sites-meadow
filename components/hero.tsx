@@ -1,14 +1,18 @@
+/* eslint-disable @next/next/no-img-element -- Robynn preview proxies public assets directly. */
+
 import type { PageSection } from '@/lib/content';
 
 type HeroSection = Extract<PageSection, { type: 'hero' }>;
 
 export function Hero({ section }: { section: HeroSection }) {
   return (
-    <section
-      className="hero"
-      style={{ backgroundImage: `url("${section.backgroundImage}")` }}
-      data-robynn-target="home__hero_background"
-    >
+    <section className="hero" data-robynn-target="home__hero_background">
+      <img
+        className="hero-background"
+        src={section.backgroundImage}
+        alt=""
+        aria-hidden="true"
+      />
       <div className="hero-inner">
         <div className="hero-text">
           <span
