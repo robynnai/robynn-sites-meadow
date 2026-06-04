@@ -8,6 +8,37 @@ export type ImageAsset = {
   height: number;
 };
 
+export type ImportedCard = {
+  title: string;
+  body?: string;
+  eyebrow?: string;
+  image?: ImageAsset;
+  cta?: { label: string; href: string };
+  items?: string[];
+};
+
+export type ImportedPerson = {
+  name: string;
+  role: string;
+  image: ImageAsset;
+  links: Array<{ label: string; href: string }>;
+};
+
+export type ImportedProject = {
+  category: string;
+  title: string;
+  body: string;
+  image: ImageAsset;
+  items: string[];
+  cta: { label: string; href: string };
+  testimonial?: {
+    quote: string;
+    name: string;
+    role: string;
+    image: ImageAsset;
+  };
+};
+
 export type SiteContent = {
   schemaVersion: number;
   site: {
@@ -96,6 +127,52 @@ export type PageSection =
       heading: string;
       subheading: string;
       formId: string;
+    }
+  | {
+      id: string;
+      type: 'imported-page';
+      variant: 'about' | 'services' | 'contact' | 'projects';
+      title: string;
+      intro?: {
+        heading: string;
+        body: string[];
+        image?: ImageAsset;
+        highlights?: string[];
+      };
+      cards?: {
+        heading: string;
+        body?: string;
+        items: ImportedCard[];
+      };
+      people?: {
+        heading: string;
+        body: string;
+        items: ImportedPerson[];
+      };
+      services?: {
+        heading: string;
+        body: string;
+        items: ImportedCard[];
+      };
+      contact?: {
+        heading: string;
+        body: string;
+        formId: string;
+        details: Array<{ label: string; values: string[] }>;
+        socialLinks: Array<{ label: string; href: string }>;
+      };
+      projects?: {
+        heading: string;
+        body: string;
+        openingTestimonial: { quote: string; name: string; role: string };
+        items: ImportedProject[];
+      };
+      cta?: {
+        heading: string;
+        body: string;
+        label: string;
+        href: string;
+      };
     }
   | {
       id: string;

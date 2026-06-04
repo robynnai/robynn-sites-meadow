@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "routePath": "/services/",
+  "title": "Services",
+  "description": "Services at Meadowview Apartments.",
+  "sections": [
+    {
+      "id": "services",
+      "type": "imported-page",
+      "variant": "services",
+      "title": "Services",
+      "services": {
+        "heading": "Our Services",
+        "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.",
+        "items": [
+          {
+            "eyebrow": "01.",
+            "title": "Meticulous Planning",
+            "body": "Nisi odio fuga, atque facilisis! Incidunt dictum non"
+          },
+          {
+            "eyebrow": "02.",
+            "title": "Completion On Time",
+            "body": "Nisi odio fuga, atque facilisis! Incidunt dictum non"
+          },
+          {
+            "eyebrow": "03.",
+            "title": "Perfect Execution",
+            "body": "Nisi odio fuga, atque facilisis! Incidunt dictum non"
+          },
+          {
+            "eyebrow": "04.",
+            "title": "Affordable Prices",
+            "body": "Nisi odio fuga, atque facilisis! Incidunt dictum non"
+          }
+        ]
+      },
+      "cards": {
+        "heading": "Our Specialization",
+        "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.",
+        "items": [
+          {
+            "title": "Architecture",
+            "body": "A short description of this quality. Make these lines enticing enough to prove that you are the best in all you do."
+          },
+          {
+            "title": "Exterior Design",
+            "body": "A short description of this quality. Make these lines enticing enough to prove that you are the best in all you do."
+          },
+          {
+            "title": "Landscape Design",
+            "body": "A short description of this quality. Make these lines enticing enough to prove that you are the best in all you do."
+          },
+          {
+            "title": "Site Planning",
+            "body": "A short description of this quality. Make these lines enticing enough to prove that you are the best in all you do."
+          },
+          {
+            "title": "Furniture Design",
+            "body": "A short description of this quality. Make these lines enticing enough to prove that you are the best in all you do."
+          },
+          {
+            "title": "Interior Design",
+            "body": "A short description of this quality. Make these lines enticing enough to prove that you are the best in all you do."
+          }
+        ]
+      },
+      "cta": {
+        "heading": "We Provide the Best Service in Industry",
+        "body": "Add a line that tells users how easily they can get in touch with you",
+        "label": "Contact Us Today",
+        "href": "#contact"
+      }
+    }
+  ]
+}

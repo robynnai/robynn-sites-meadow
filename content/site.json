@@ -3,9 +3,9 @@
   "site": {
     "name": "Meadowview Apartments",
     "description": "Meadowview Apartments in Springfield, Missouri.",
-    "canonicalBaseUrl": "https://a-meadowapt.vercel.app",
-    "owner": "madhukarkumar",
-    "repo": "a-meadowapt",
+    "canonicalBaseUrl": "https://themeadowviewapt.com",
+    "owner": "robynnai",
+    "repo": "robynn-sites-meadow",
     "branch": "main"
   },
   "contact": {
@@ -18,10 +18,10 @@
   },
   "navigation": {
     "logo": {
-      "src": "/wp-content/uploads/2024/04/MV-Logo-Trans.png",
+      "src": "/wp-content/uploads/2024/04/MV-Logo-Trans-160x80.png",
       "alt": "Meadowview Apartments",
-      "width": 400,
-      "height": 200
+      "width": 160,
+      "height": 80
     },
     "items": [
       { "label": "Home", "href": "#welcome" },

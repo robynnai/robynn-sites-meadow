@@ -2,6 +2,7 @@ import { Amenities } from '@/components/amenities';
 import { Contact } from '@/components/contact';
 import { Gallery } from '@/components/gallery';
 import { Hero } from '@/components/hero';
+import { ImportedPage } from '@/components/imported-page';
 import { Welcome } from '@/components/welcome';
 import type { PageContent, PageSection, SiteContent } from '@/lib/content';
 
@@ -39,6 +40,10 @@ export function PageRenderer({
             return <Amenities key={section.id} section={section} />;
           case 'contact':
             return <Contact key={section.id} section={section} site={site} />;
+          case 'imported-page':
+            return (
+              <ImportedPage key={section.id} section={section} site={site} />
+            );
           case 'legacy-html':
             return <LegacyHtml key={section.id} section={section} />;
         }

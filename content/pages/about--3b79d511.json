@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "routePath": "/about/",
+  "title": "About",
+  "description": "About Meadowview Apartments.",
+  "sections": [
+    {
+      "id": "about",
+      "type": "imported-page",
+      "variant": "about",
+      "title": "About Us",
+      "intro": {
+        "heading": "Our Story",
+        "image": {
+          "src": "/wp-content/uploads/elementor/thumbs/our-story-img-1-qitrfu9qd7rnza47c64clz6vpipyso07doopubpc0w.jpg",
+          "alt": "our-story-img.jpg",
+          "width": 640,
+          "height": 426
+        },
+        "body": [
+          "You can add here some history of your company.You can mention all the benefits or services with some real examples. You can also state how you emphasize on their well being. This often shows your concern and increases the chances of conversion.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        ],
+        "highlights": [
+          "Professional Specialist",
+          "Brilliant Ideas",
+          "Precise Builders",
+          "24/7 Assiatance"
+        ]
+      },
+      "cards": {
+        "heading": "What We Offer",
+        "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.",
+        "items": [
+          {
+            "title": "We Understand Requirements",
+            "body": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/requirements.jpg",
+              "alt": "Requirements",
+              "width": 640,
+              "height": 430
+            },
+            "cta": { "label": "Learn More", "href": "#" }
+          },
+          {
+            "title": "We Work Precisely",
+            "body": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "image": {
+              "src": "/wp-content/uploads/2021/03/worker.jpg",
+              "alt": "Worker",
+              "width": 640,
+              "height": 430
+            },
+            "cta": { "label": "Learn More", "href": "#" }
+          },
+          {
+            "title": "We Deliver Best Output",
+            "body": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/building.jpg",
+              "alt": "Building",
+              "width": 640,
+              "height": 430
+            },
+            "cta": { "label": "Learn More", "href": "#" }
+          }
+        ]
+      },
+      "people": {
+        "heading": "Our Expert Team",
+        "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short, attractive.",
+        "items": [
+          {
+            "name": "Juan George",
+            "role": "Vice President",
+            "image": {
+              "src": "/wp-content/uploads/2021/03/team-img.jpg",
+              "alt": "Juan George",
+              "width": 640,
+              "height": 640
+            },
+            "links": [
+              { "label": "Facebook", "href": "#" },
+              { "label": "Twitter", "href": "#" },
+              { "label": "Youtube", "href": "#" }
+            ]
+          },
+          {
+            "name": "Sean Hart",
+            "role": "Project Leader",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/team-2-1.jpg",
+              "alt": "Sean Hart",
+              "width": 640,
+              "height": 640
+            },
+            "links": [
+              { "label": "Facebook", "href": "#" },
+              { "label": "Twitter", "href": "#" },
+              { "label": "Youtube", "href": "#" }
+            ]
+          },
+          {
+            "name": "Emma Kelly",
+            "role": "Creative Director",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/team-3-1.jpg",
+              "alt": "Emma Kelly",
+              "width": 640,
+              "height": 640
+            },
+            "links": [
+              { "label": "Facebook", "href": "#" },
+              { "label": "Twitter", "href": "#" },
+              { "label": "Youtube", "href": "#" }
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "heading": "We Provide the Best Service in Industry",
+        "body": "Add a line that tells users how easily they can get in touch with you",
+        "label": "Contact Us Today",
+        "href": "#contact"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "routePath": "/projects/",
+  "title": "Projects",
+  "description": "Projects from Meadowview Apartments.",
+  "sections": [
+    {
+      "id": "projects",
+      "type": "imported-page",
+      "variant": "projects",
+      "title": "Projects",
+      "projects": {
+        "heading": "Recent Projects",
+        "body": "Tiny sub heading that focuses on the topic mentioned above",
+        "openingTestimonial": {
+          "quote": "Lorem lacus reiciendis illo placerat tempus, temporibus deserunt commodo incidunt error, unde. Facilisis aspernatur. Recusandae illum",
+          "name": "John Doe",
+          "role": "CEO At NY Water Park"
+        },
+        "items": [
+          {
+            "category": "Commercial Properties",
+            "title": "NY Water Park",
+            "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/project-3-1.jpg",
+              "alt": "NY Water Park",
+              "width": 640,
+              "height": 640
+            },
+            "items": [
+              "Blandit fugit dicta quibusdam, maxime tempor",
+              "Blandit fugit dicta quibusdam, maxime tempor",
+              "Blandit fugit dicta quibusdam, maxime tempor"
+            ],
+            "cta": { "label": "Visit Project", "href": "#" },
+            "testimonial": {
+              "quote": "Lorem lacus reiciendis illo placerat tempus, temporibus deserunt commodo incidunt error, unde. Facilisis aspernatur. Recusandae illum",
+              "name": "John Doe",
+              "role": "CEO At NY Water Park",
+              "image": {
+                "src": "/wp-content/uploads/2021/03/testimonial-image-150x150.jpg",
+                "alt": "John Doe",
+                "width": 150,
+                "height": 150
+              }
+            }
+          },
+          {
+            "category": "Real Estate",
+            "title": "Reinstate West Project",
+            "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/project-4-1.jpg",
+              "alt": "Reinstate West Project",
+              "width": 640,
+              "height": 640
+            },
+            "items": [
+              "Blandit fugit dicta quibusdam, maxime tempor",
+              "Blandit fugit dicta quibusdam, maxime tempor",
+              "Blandit fugit dicta quibusdam, maxime tempor"
+            ],
+            "cta": { "label": "Visit Project", "href": "#" },
+            "testimonial": {
+              "quote": "Lorem lacus reiciendis illo placerat tempus, temporibus deserunt commodo incidunt error, unde. Facilisis aspernatur. Recusandae illum",
+              "name": "Margaret Curtis",
+              "role": "Director at West Project",
+              "image": {
+                "src": "/wp-content/uploads/2020/08/team-3-1-150x150.jpg",
+                "alt": "Margaret Curtis",
+                "width": 150,
+                "height": 150
+              }
+            }
+          },
+          {
+            "category": "Commercial Properties",
+            "title": "Sky Tail Tower",
+            "body": "You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want. Make sure you keep it short and attractive.",
+            "image": {
+              "src": "/wp-content/uploads/2020/08/project-5-1.jpg",
+              "alt": "Sky Tail Tower",
+              "width": 640,
+              "height": 640
+            },
+            "items": [
+              "Blandit fugit dicta quibusdam, maxime tempor",
+              "Blandit fugit dicta quibusdam, maxime tempor",
+              "Blandit fugit dicta quibusdam, maxime tempor"
+            ],
+            "cta": { "label": "Visit Project", "href": "#" },
+            "testimonial": {
+              "quote": "Lorem lacus reiciendis illo placerat tempus, temporibus deserunt commodo incidunt error, unde. Facilisis aspernatur. Recusandae illum",
+              "name": "Matthew Fox",
+              "role": "CEO At Sky Tail Ltd.",
+              "image": {
+                "src": "/wp-content/uploads/2020/08/testimonials-1-1-150x150.jpg",
+                "alt": "Matthew Fox",
+                "width": 150,
+                "height": 150
+              }
+            }
+          }
+        ]
+      },
+      "cta": {
+        "heading": "We Provide the Best Service in Industry",
+        "body": "Add a line that tells users how easily they can get in touch with you",
+        "label": "Contact Us Today",
+        "href": "#contact"
+      }
+    }
+  ]
+}
