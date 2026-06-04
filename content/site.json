@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "name": "Meadowview Apartments",
+    "description": "Meadowview Apartments in Springfield, Missouri.",
+    "canonicalBaseUrl": "https://a-meadowapt.vercel.app",
+    "owner": "madhukarkumar",
+    "repo": "a-meadowapt",
+    "branch": "main"
+  },
+  "contact": {
+    "phone": "417-823-3950",
+    "phoneHref": "tel:+14178233950",
+    "email": "info@jnmrealtygroup.com",
+    "emailHref": "mailto:info@jnmrealtygroup.com",
+    "address": ["3460 E Lombard St", "Springfield, MO 65809"],
+    "mapSrc": "https://maps.google.com/maps?q=3460%20E%20Lombard%20St%20Springfield%2C%20MO%2065809&t=m&z=10&output=embed&iwloc=near"
+  },
+  "navigation": {
+    "logo": {
+      "src": "/wp-content/uploads/2024/04/MV-Logo-Trans.png",
+      "alt": "Meadowview Apartments",
+      "width": 400,
+      "height": 200
+    },
+    "items": [
+      { "label": "Home", "href": "#welcome" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Amenities", "href": "#amenities" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": { "label": "Contact Us", "href": "#contact" }
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 Meadowview Apartments | All Right Reserverd"
+  },
+  "robynnWidget": {
+    "src": "https://robynn.ai/widget/v1/robynn-widget.js",
+    "org": "the-meadow-view-apartments",
+    "key": "rbw_2d2da1e153fc3cfddb39d25163544b2e00f78bd113dd4f61ede03ba0d55b42d9"
+  },
+  "forms": {
+    "tourRequest": {
+      "id": "tour-request",
+      "label": "Tour request",
+      "webhookEnv": "ROBYNN_WEBHOOK_URL",
+      "fallbackEmail": "info@jnmrealtygroup.com",
+      "fields": [
+        { "name": "name", "label": "Name", "type": "text", "required": true, "autoComplete": "name" },
+        { "name": "email", "label": "Email", "type": "email", "required": true, "autoComplete": "email" },
+        { "name": "subject", "label": "Subject", "type": "text", "required": false },
+        { "name": "message", "label": "Message", "type": "textarea", "required": true }
+      ],
+      "defaultSubject": "Meadowview Apartments Tour Request",
+      "submitLabel": "Contact Us"
+    }
+  }
+}
