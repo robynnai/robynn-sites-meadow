@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "routePath": "/",
+  "title": "Meadowview Apartments",
+  "description": "Meadowview Apartments in Springfield, Missouri.",
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "backgroundImage": "/wp-content/uploads/2024/01/1-PH-scaled.jpg",
+      "script": "Welcome",
+      "headingLines": ["Meadowview", "Apartments"],
+      "tour": {
+        "label": "Tour Today!",
+        "href": "#contact",
+        "ariaLabel": "Tour Today"
+      }
+    },
+    {
+      "id": "welcome",
+      "type": "welcome",
+      "heading": "Welcome to Meadowview Apartments",
+      "body": "Looking for a quiet, convenient place to live in Springfield, Missouri? Consider the Meadowview Apartments. These apartments offer access to parks, jogging and bicycle paths, schools, churches, shopping, dining, and entertainment – perfect for those who appreciate convenience, comfort, and privacy.",
+      "cta": { "label": "Contact Us", "href": "#contact" }
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "heading": "Gallery",
+      "images": [
+        {
+          "src": "/wp-content/uploads/2024/01/Lombard-Drone-Back-1-scaled.jpg",
+          "alt": "Aerial view",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/1-PH-scaled.jpg",
+          "alt": "Interior",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/2-PH-scaled.jpg",
+          "alt": "Interior",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/3-PH-scaled.jpg",
+          "alt": "Interior",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/4-PH-scaled.jpg",
+          "alt": "Interior",
+          "width": 1600,
+          "height": 911
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/5-PH-scaled.jpg",
+          "alt": "Interior",
+          "width": 1600,
+          "height": 911
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/Kitchen.jpg",
+          "alt": "Kitchen",
+          "width": 750,
+          "height": 428
+        },
+        {
+          "src": "/wp-content/uploads/2024/01/Lombard-12-scaled.jpg",
+          "alt": "Exterior",
+          "width": 1600,
+          "height": 1068
+        }
+      ]
+    },
+    {
+      "id": "amenities",
+      "type": "amenities",
+      "heading": "Amenities",
+      "groups": [
+        {
+          "title": "Features",
+          "items": [
+            "BBQ Area",
+            "Pool",
+            "Ample Parking",
+            "Pets welcome",
+            "Quiet community",
+            "Laundry Facilities on Site"
+          ]
+        },
+        {
+          "title": "Building Amenities",
+          "items": ["24 Hr Maintenance", "Central Heat & Air", "Quiet Community"]
+        },
+        {
+          "title": "Unit Features",
+          "items": [
+            "2 Bedrooms",
+            "1.5 Bath",
+            "Fully-Equipped Kitchens",
+            "900 sq ft",
+            "Patio or Balcony",
+            "Garden Views"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "heading": "Contact Us Today to Schedule a Tour!",
+      "subheading": "Professionally Managed by JNM Realty Group",
+      "formId": "tourRequest"
+    }
+  ]
+}
