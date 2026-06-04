@@ -119,8 +119,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/wp-content/uploads/2024/01/1-PH-scaled.jpg") center/cover
-    no-repeat;
+  overflow: hidden;
+  background: #1e1e28;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero::before {
@@ -128,6 +137,7 @@ img {
   position: absolute;
   inset: 0;
   background: rgba(30, 30, 40, 0.5);
+  z-index: 1;
 }
 
 .hero-inner {
