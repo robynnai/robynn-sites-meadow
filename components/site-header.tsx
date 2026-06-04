@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element -- Robynn preview proxies public assets directly. */
 
 import type { SiteContent } from '@/lib/content';
 
@@ -10,12 +10,11 @@ export function SiteHeader({ navigation }: SiteHeaderProps) {
   return (
     <header className="site-header">
       <a href="#" className="logo" data-robynn-target="site__logo">
-        <Image
+        <img
           src={navigation.logo.src}
           alt={navigation.logo.alt}
           width={navigation.logo.width}
           height={navigation.logo.height}
-          priority
         />
       </a>
       <nav>
